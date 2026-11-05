@@ -70,6 +70,14 @@ h2{font-family:var(--mono);font-weight:500;font-size:13px;letter-spacing:.1em;te
 .skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:28px 32px;padding-block:28px}
 .skills h3{font-family:var(--display);font-size:1.1rem;margin:0 0 6px}
 .skills p{margin:0;color:var(--muted)}
+.quote{margin:0;padding:4px 0 4px 20px;border-left:3px solid var(--accent);max-width:62ch}
+.quote p{margin:0 0 10px;font-size:1.05rem}
+.quote footer{border:0;padding:0;margin:0;font-family:var(--mono);font-size:13px;color:var(--muted)}
+.awards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:28px;padding-block:28px}
+.awards figure{margin:0}
+.awards img{display:block;width:100%;height:auto;border:1px solid var(--rule);border-radius:2px;background:#fff}
+.awards figcaption{font-family:var(--mono);font-size:12px;color:var(--muted);margin-top:8px}
+.awards figcaption b{display:block;font-family:var(--display);font-size:1rem;color:var(--fg);font-weight:700;margin-bottom:2px}
 .contact{padding-block:28px 72px}
 .contact p{max-width:56ch}
 .addr{font-family:var(--mono);font-size:15px;word-break:break-all}
@@ -90,7 +98,7 @@ footer{border-top:1px solid var(--rule);padding-block:20px 32px;font-family:var(
 <div class="wrap">
 <header class="top">
   <span class="brand">Nirmal Kumar Savita</span>
-  <nav aria-label="Sections"><a href="#work">Work</a><a href="#experience">Experience</a><a href="#credentials">Credentials</a><a href="#skills">Skills</a><a href="#contact">Contact</a></nav>
+  <nav aria-label="Sections"><a href="#work">Work</a><a href="#experience">Experience</a><a href="#testimonials">Testimonials</a><a href="#credentials">Credentials</a><a href="#skills">Skills</a><a href="#contact">Contact</a></nav>
 </header>
 
 <main>
@@ -104,7 +112,7 @@ footer{border-top:1px solid var(--rule);padding-block:20px 32px;font-family:var(
     <a class="btn" href="#work">See selected work</a>
   </div>
   </div>
-  <figure class="portrait"><img src="img/Photo1.jpg" width="640" height="640" alt="Portrait of Nirmal Kumar Savita"></figure>
+  <figure class="portrait"><img src="img/photo.jpg" width="640" height="640" alt="Portrait of Nirmal Kumar Savita"></figure>
 </div>
 
 <div class="figures" role="list" aria-label="Career at a glance">
@@ -221,6 +229,23 @@ footer{border-top:1px solid var(--rule);padding-block:20px 32px;font-family:var(
   </article>
 </section>
 
+<section id="testimonials">
+  <h2>Testimonials and recognition</h2>
+  <article class="row">
+    <div><p class="meta">Oct 2023</p></div>
+    <div><blockquote class="quote"><p>With five years of experience under his belt, Nirmal consistently demonstrated a remarkable ability to upskill and adapt to new technologies. His unwavering dedication to success and his outstanding work ethic set him apart. Nirmal's superb communication skills and his talent for collaborating within multi-dimensional teams make him an invaluable asset.</p><footer>Rakib Mirza, Principal Engineer, who managed me directly at Tata Consultancy Services (LinkedIn recommendation)</footer></blockquote></div>
+  </article>
+  <article class="row">
+    <div><p class="meta">Jun 2025</p></div>
+    <div><blockquote class="quote"><p>From day one, he quickly became an integral part of my team, showing not only technical competence but also excellent interpersonal skills, and passion. He consistently met deadlines, took initiative, and contributed valuable ideas that improved both workflow and team collaboration. He is respected and liked by both peers and management, and consistently went above and beyond to support team goals.</p><footer>Cezara Bozedean, Store Manager, Boots UK, London Earl's Court (reference letter)</footer></blockquote></div>
+  </article>
+  <div class="awards">
+    <figure><img src="img/award-tcs-star-of-the-month.jpg" width="815" height="522" loading="lazy" alt="TCS Star of the Month Award certificate awarded to Nirmal Savita, 30 November 2021"><figcaption><b>Star of the Month</b>Tata Consultancy Services, Nov 2021, for contributing to critical project deliverables beyond the call of duty</figcaption></figure>
+    <figure><img src="img/award-tcs-appreciation.jpg" width="825" height="495" loading="lazy" alt="TCS Certificate of Appreciation for the go-live of Realtime Stock Service and Realtime Price Service"><figcaption><b>Certificate of Appreciation</b>Tata Consultancy Services, for the go-live of Realtime Stock and Realtime Price Services on an AWS microservice platform</figcaption></figure>
+    <figure><img src="img/award-mckinsey-forward.jpg" width="900" height="913" loading="lazy" alt="McKinsey and Company Forward Program completion certificate, 17 December 2024"><figcaption><b>McKinsey Forward Program</b>Completed 17 Dec 2024</figcaption></figure>
+  </div>
+</section>
+
 <section id="credentials">
   <h2>Credentials</h2>
   <div class="badges">
@@ -235,6 +260,11 @@ footer{border-top:1px solid var(--rule);padding-block:20px 32px;font-family:var(
     <div><p class="meta">2023 to 2024</p></div>
     <div><h3>MSc Software Project Management</h3><p class="meta">Royal Holloway, University of London</p>
       <figure class="grad"><img src="img/graduation.jpg" width="460" height="650" alt="Nirmal in graduation gown holding his degree scroll"><figcaption>Graduation day</figcaption></figure></div>
+  </article>
+  <article class="row">
+    <div><p class="meta">Jan 2026</p></div>
+    <div><h3>Pharmacy Advisor Programme</h3><p class="meta">Boots UK, accredited by the General Pharmaceutical Council (RQF level 2)</p>
+      <figure class="grad"><img src="img/cert-boots-pharmacy-advisor.jpg" width="420" height="594" loading="lazy" alt="Boots UK Pharmacy Advisor Programme certificate awarded to Nirmal Savita, 15 January 2026"><figcaption>Certificate, 15 Jan 2026</figcaption></figure></div>
   </article>
   <article class="row">
     <div><p class="meta">2014 to 2018</p></div>
